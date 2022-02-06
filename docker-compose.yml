@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  nodejs:
+    image: nodejs
+    env_file: .env
+    volumes:
+      - .:/usr/src/app
+      - ./node_modules:/usr/src/app/node_modules
+    ports:
+      - 8080:8080
