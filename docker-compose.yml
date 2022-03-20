@@ -1,11 +1,12 @@
-version: '2'
+version: '3'
 
 services:
-  nodejs:
-    image: nodejs
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
     env_file: .env
     volumes:
-      - .:/usr/src/app
-      - ./node_modules:/usr/src/app/node_modules
+      - ./:/usr/src/app
     ports:
-      - 8080:8080
+      - "8080:8080"

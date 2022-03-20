@@ -1,25 +1,18 @@
 {
-  "name": "demo-dynomodb",
-  "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Carlos-Henreis/demo-dynomoDB.git"
-  },
+  "name": "demo-dynomoDB",
+  "main": "index.js",
   "author": "Carlos Henrique Reis",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Carlos-Henreis/demo-dynomoDB/issues"
-  },
-  "homepage": "https://github.com/Carlos-Henreis/demo-dynomoDB#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.15"
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon -L"
   },
   "dependencies": {
-    "express": "^4.17.2"
+    "aws-sdk": "^2.1082.0",
+    "body-parser": "^1.19.2",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
